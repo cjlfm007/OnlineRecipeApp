@@ -1,0 +1,19 @@
+{
+  "name": "onlinerecipeapp",
+  "version": "1.0.0",
+  "description": "online recipe project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjlfm007/OnlineRecipeApp.git"
+  },
+  "author": "Fangming Lu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjlfm007/OnlineRecipeApp/issues"
+  },
+  "homepage": "https://github.com/cjlfm007/OnlineRecipeApp#readme"
+}

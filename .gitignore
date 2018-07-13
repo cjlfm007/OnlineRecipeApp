@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Maven
+target
+dependency-reduced-pom.xml
+
+# Intellij IDEA
+*.iml
+.idea/*
+
+# Eclipse
+.settings
+.classpath
+.project
+.checkstyle
+test-output

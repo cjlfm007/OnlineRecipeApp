@@ -27,7 +27,9 @@ const controlSearch = async () => {
         state.search = new Search(query);
 
         // 3) Prepare UI for results
-        
+        searchView.clearInput();
+        searchView.clearResults();
+
         // 4) Search for recipes;
         await state.search.getResults();// 所有async method return 的都是promise，因为getResults定义的是async method所以这里也是返回的promise，所以需要await
 

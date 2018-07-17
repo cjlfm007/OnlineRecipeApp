@@ -3,6 +3,13 @@
 //export const ID = 23;
 import { elements } from './base';
 export const getIput = () => elements.searchInput.value;
+export const clearInput = () => {
+     elements.searchInput.value = '';
+};
+
+export const clearResults = () => {
+    elements.searchResList.innerHTML = '';
+};
 
 const renderRecipe = recipe => {
     const markup = `
@@ -19,9 +26,9 @@ const renderRecipe = recipe => {
 </li>
 `;
 elements.searchResList.insertAdjacentHTML('beforeend',markup);
-}
+};
 
 export const renderResults = recipes => {
     recipes.forEach(renderRecipe);//recipes.foreach(el => renderRecipe(el))
 
-}
+};

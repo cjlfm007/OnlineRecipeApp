@@ -45,6 +45,13 @@ elements.searchForm.addEventListener('submit',e => {
     e.preventDefault();
     controlSearch();
 });
-//const search = new Search('pizza');
-//console.log(search);
-//search.getResults();
+
+elements.searchResPages.addEventListener('click', e=>{
+    const btn = e.target.closest('.btn-inline');
+    console.log(btn);
+    if(btn){
+        const goToPage = parseInt(btn.dataset.goto,10);
+        searchView.clearResults();
+        searchView.renderResults(state.search.result,goToPage);
+    }
+});

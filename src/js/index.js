@@ -133,7 +133,7 @@ elements.shopping.addEventListener('click', e => {
         //Delete from state
         state.list.deleteItem(id);
         //Delte from  UI
-        listView.deleItem(id);
+        listView.deleteItem(id);
 
         //Handle the count update
     }else if(e.target.matches('.shopping__count-value')){
